@@ -1,0 +1,1 @@
+{"append":[],"appendChanged":false,"build_mode":"user","cflags":"","dirs":"","ldflags":"","mode":"Native","output_bin":"","run_mode":3,"shell_cleanup":"make clean","shell_command":"(CIDE:GCCROOT)(CIDE:PREFIX)/bin/cmake --build .build --target install/strip"}
