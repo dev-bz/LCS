@@ -170,9 +170,9 @@ int GetLCS(const jchar* _A, int _A_Length, const jchar* _B, int _B_Length, jchar
 	return ix;
 }
 JNIEXPORT jstring JNICALL Java_org_lcs_MainActivity_stringFromJNI(JNIEnv* env, jclass cls, jstring a, jstring b) {
-	jboolean copy;
-	const jchar* A= (*env)->GetStringChars(env, a, &copy);
-	const jchar* B= (*env)->GetStringChars(env, b, &copy);
+	jboolean _copy;
+	const jchar* A= (*env)->GetStringChars(env, a, &_copy);
+	const jchar* B= (*env)->GetStringChars(env, b, &_copy);
 	int i= (*env)->GetStringLength(env, a), j= (*env)->GetStringLength(env, b);
 	jchar out[(i < j ? i : j) * 6 + 2];
 	out[0] = 0;
